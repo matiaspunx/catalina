@@ -1,12 +1,4 @@
 /*
- * #Catalina
- *
- * Multi device layout styles to build your web application. 
- * Brought to you by #Catalina team.
- *
- */
-
-/*
  * Reset and Grid Styles 
  * Grid brought to you by Bootstrap
  */
@@ -19,3 +11,8 @@
  */
 
 @import '_fonts';
+
+.box {
+	border-radius: 10px;
+	transform: scale(0.5)
+}

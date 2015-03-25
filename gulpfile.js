@@ -20,9 +20,9 @@ function formatDate() {
 
 var pkg = require('./package.json');
 
-var banner = ['/**',
+var banner = ['/*',
   ' * ',
-  ' *   Catalina - <%= pkg.description %>',
+  ' *   #Catalina - <%= pkg.description %>',
   ' *   @version v<%= pkg.version %> - '+formatDate(),
   ' *   @author <%= pkg.author %>',
   ' * ',
@@ -44,8 +44,9 @@ gulp.task('lint', function () {
 });
 
 gulp.task('sass', function () {
-    var sass = require('gulp-sass');
-    var autoprefixer = require('gulp-autoprefixer');
+    var sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    header = require('gulp-header');
 
     return gulp.src('app/scss/*.scss')
         .pipe(sass({
@@ -53,8 +54,9 @@ gulp.task('sass', function () {
         }))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
-            cascade: false
+            cascade: true
         }))
+        .pipe(header(banner, { pkg : pkg } ))
         .pipe(gulp.dest('app/styles'));
 });
 
@@ -71,7 +73,11 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('app/fonts/*')
+    //return gulp.src('app/fonts/*')
+    return gulp.src([
+            'app/fonts/*',
+            'app/bower_components/fontawesome/fonts/*'
+        ])
         .pipe(gulp.dest('dist/fonts'));
 });
 
@@ -88,6 +94,7 @@ gulp.task('html', ['sass'], function () {
         minifyCss = require('gulp-minify-css'),
         useref = require('gulp-useref'),
         gulpif = require('gulp-if'),
+        header = require('gulp-header'),
         assets = useref.assets();
 
     return gulp.src('app/*.html')
@@ -96,6 +103,8 @@ gulp.task('html', ['sass'], function () {
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(assets.restore())
         .pipe(useref())
+        .pipe(gulpif('*.js', header(banner, { pkg : pkg } )))
+        .pipe(gulpif('*.css', header(banner, { pkg : pkg } )))
         .pipe(gulp.dest('dist'));
 });
 

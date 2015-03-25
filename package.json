@@ -1,7 +1,7 @@
 {
   "name": "Catalina",
   "version": "0.1.0",
-  "description": "Catalina es un boilerplate para crear Web Apps, gestionado con Gulp, Bower y mucho amor",
+  "description": "Multi device layout styles to build your web application. Brought to you by #Catalina team.",
   "author": "Matias Punx",
   "dependencies": {},
   "devDependencies": {
