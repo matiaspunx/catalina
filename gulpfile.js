@@ -1,7 +1,7 @@
 /**
  *
- *  Punx Starter Kit 
- *  Un template para ayudarte a crear rapidamente cualquier tipo de web app.
+ *  Catalina
+ *  A brand-new multi device layout styles to build your web application.
  *  Copyright 2015, Matias Punx - tw: @antirockstars
  *
  */
@@ -24,7 +24,7 @@ var banner = ['/*',
   ' * ',
   ' *   #Catalina - <%= pkg.description %>',
   ' *   @version v<%= pkg.version %> - '+formatDate(),
-  ' *   @author <%= pkg.author %>',
+  ' *   @author <%= pkg.author %> - email: <%= pkg.email %> - twitter: <%= pkg.twitter %>',
   ' * ',
   ' */\n\n',
   ''].join('\n');

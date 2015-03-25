@@ -1,8 +1,10 @@
 {
   "name": "Catalina",
   "version": "0.1.0",
-  "description": "Multi device layout styles to build your web application. Brought to you by #Catalina team.",
+  "description": "A brand-new multi device layout styles to build your web application. Brought to you by #Catalina team.",
   "author": "Matias Punx",
+  "email": "matias.punx@gmail.com",
+  "twitter": "http://twitter.com/antirockstars",
   "dependencies": {},
   "devDependencies": {
     "apache-server-configs": "^2.13.0",
