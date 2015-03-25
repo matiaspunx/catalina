@@ -8,7 +8,7 @@ $link-color:            #00B7FF !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 $font-family-default:  'Roboto Condensed', Helvetica, Arial, sans-serif !default;
 $font-size-base:          14px !default;

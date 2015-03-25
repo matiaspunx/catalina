@@ -28,9 +28,10 @@
     <link rel="canonical" href="http://www.ejemplo.com/">
   -->
   
-  <!-- build:css styles/font-awesome.min.css -->
+  <!-- build:css styles/catalina.min.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/remodal/dist/jquery.remodal.css">
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
@@ -51,12 +52,34 @@
         <p>A brand-new multi device layout styles to build your web application. Brought to you by <a href="#Catalina">Catalina</a> team.</p>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <p><a data-remodal-target="modal">reModal</a></p>
+      </div>
+    </div>
     
   </div>
+
+<div class="remodal" data-remodal-id="modal"
+    data-remodal-options="hashTracking: true">
+    <h1>Modal</h1>
+    <p>
+      Modal Content
+    </p>
+    <br>
+    <a class="remodal-cancel" href="#">Cerrar</a>
+    <a class="remodal-confirm" href="#">OK</a>
+</div>
 
   <!-- build:js scripts/vendor/jquery.min.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:js scripts/catalina.min.js -->
+  <!-- bower:js -->
+  <script src="bower_components/remodal/dist/jquery.remodal.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js scripts/main.min.js -->
