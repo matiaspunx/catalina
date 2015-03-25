@@ -23,14 +23,14 @@ $ bower install
 $ gulp serve
 ```
 
-Iniciamos un server con Connect y cargamos el sitio en nuestro navegador por defecto. Automáticamente vigila las modificaciones que hagamos en los archivos y recarga el sitio con Livereload cuando hacemos cambios.
+El comando `gulp serve` inicia un server con Connect y carga el sitio en nuestro navegador por defecto. Automáticamente vigila las modificaciones que hagamos en los archivos y recarga el sitio con Livereload cuando encuentra cambios.
 
 
 ```bash
 $ gulp
 ```
 
-Hace un deploy de nuestro proyecto a una carpeta `dist`.
+El comando `gulp` hace un deploy de nuestro proyecto a una carpeta `dist`.
 
 
 ## <a name="team-members"></a>Miembros del equipo
