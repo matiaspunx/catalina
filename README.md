@@ -35,4 +35,4 @@ Hace un deploy de nuestro proyecto a una carpeta `dist`.
 *[Miembros del equipo](#team-members)
 
 ## <a name="team-members"></a>Miembros del equipo
-* "Matias Punx" <matias.punx@gmail.com>
+* Matias Punx <matias.punx@gmail.com> - <http://www.twitter.com/antirockstars>
