@@ -37,3 +37,8 @@ El comando `gulp` hace un deploy de nuestro proyecto a una carpeta `dist`.
 
 ## <a name="team-members"></a>Miembros del equipo
 * Matias Punx - <matias.punx@gmail.com> - <http://www.twitter.com/antirockstars>
+
+
+# Libraries 
+
+<https://github.com/VodkaBears/Remodal>
