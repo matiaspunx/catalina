@@ -41,4 +41,5 @@ El comando `gulp` hace un deploy de nuestro proyecto a una carpeta `dist`.
 
 # Libraries 
 
-<https://github.com/VodkaBears/Remodal>
+- Font Awesome - <http://fortawesome.github.io/Font-Awesome/>
+- reModal - <https://github.com/VodkaBears/Remodal>
