@@ -45,10 +45,15 @@ gulp.task('lint', function () {
 
 gulp.task('sass', function () {
     var sass = require('gulp-sass');
+    var autoprefixer = require('gulp-autoprefixer');
 
     return gulp.src('app/scss/*.scss')
         .pipe(sass({
             precision: 10
+        }))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
         }))
         .pipe(gulp.dest('app/styles'));
 });
