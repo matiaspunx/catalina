@@ -5,7 +5,7 @@ Gestionado con Gulp para manejar tareas, Bower para administrar librerias y Sass
 
 ## Empezando
 
-Instalar dependencias:
+Primero que nada instalamos las dependencias:
 
 ```bash
 $ npm install
@@ -14,6 +14,8 @@ $ npm install
 ```bash
 $ bower install
 ```
+
+Con `npm install` vamos a instalar Gulp y sus dependencias. Y con `bower install` vamos a instalar las librerias para usar en nuestra app (ej: jQuery)
 
 ## Como usarlo?
 
