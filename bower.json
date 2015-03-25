@@ -1,0 +1,25 @@
+{
+  "name": "Catalina",
+  "version": "0.0.1",
+  "authors": [
+    "matiaspunx <matias.punx@gmail.com>"
+  ],
+  "description": "Catalina es un boilerplate para crear Web Apps. Gulp, Bower y mucho amor",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  },
+  "devDependencies": {
+    "material-design-icons": "~1.0.1"
+  }
+}
