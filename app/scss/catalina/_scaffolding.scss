@@ -2,12 +2,13 @@
 // Scaffolding
 // --------------------------------------------------
 
+// This Scaffolding is 100% based on Bootstrap: http://getbootstrap.com/
+
 
 // Reset the box-sizing
 //
-// Heads up! This reset may cause conflicts with some third-party widgets.
-// For recommendations on resolving such conflicts, see
-// http://getbootstrap.com/getting-started/#third-box-sizing
+// This reset may cause conflicts with some third-party widgets like Google Maps.
+// For recommendations on resolving such conflicts, see https://css-tricks.com/box-sizing/
 * {
   @include box-sizing(border-box);
 }

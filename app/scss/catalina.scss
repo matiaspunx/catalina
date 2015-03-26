@@ -1,0 +1,37 @@
+// Core variables and mixins
+@import "catalina/variables";
+@import "catalina/mixins";
+@import "catalina/normalize";
+
+@import "catalina/fonts";
+@import "catalina/scaffolding";
+@import "catalina/type";
+@import "catalina/grid";
+@import "catalina/buttons";
+
+// Utility classes
+@import "catalina/utilities";
+@import "catalina/responsive-utilities";
+
+
+//
+//
+.masthead {
+	padding:10px 0;
+	background-color: $brand-primary;
+	.masthead-logo {
+		font-size: 26px;
+		color: #fff;
+	}
+}
+
+.container-wide {
+	min-width: 100%;
+}
+.big-banner {
+	background-color: $gray-lighter;
+	.big-banner-inn {
+		text-align: center;
+		padding:100px 0
+	}
+}
